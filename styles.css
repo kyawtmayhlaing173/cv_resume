@@ -42,6 +42,7 @@ body {
 	font-size: 19px;
 	background-color: #FEFEFE;
 	color: #04143A;
+	margin: 30px;
 }
 ol, ul {
 	list-style: none;
@@ -81,7 +82,7 @@ div , footer {
 .container {
 	max-width: 1100px;
 	height: auto;
-	margin: 200px auto;
+	margin: 100px auto;
 }
 
 .hero {
@@ -116,10 +117,10 @@ h1.name {
 }
 
 .lead {
-	font-size: 44px;
-	font-weight: 300;
-	margin-top: 60px;
-	line-height: 55px;
+	font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;
+    line-height: 25px;
 }
 
 /*hero ends*/
@@ -133,7 +134,13 @@ h1.name {
 	height: 50px;
 }
 
-.education {
+.education { 
+	max-width: 1100px;
+	height: auto;
+	margin: 0px auto 250px auto;
+}
+
+.education .sections{
 	vertical-align: top;
 	display: inline-block;
 	width: 100%;
@@ -181,13 +188,21 @@ h1.name {
 	font-weight: 600;
 	color: #5B6A9A;
 	line-height: 26px;
-	margin-bottom: 8px;
+	margin: 8px 0px;
 }
 
 .list-card div span {
 	font-size: 16px;
 	color: #81899C;
 	line-height: 22px;
+}
+
+.languages-container {
+	height: 150px;
+}
+
+.languages{
+	margin-top: 10px;
 }
 
 /*skill and intrests ends*/
@@ -235,7 +250,7 @@ h1.name {
 }
 
 .skill-level h2 {
-	font-size: 95px;
+	font-size: 50px;
 	font-weight: 300;
 	display: inline-block;
 	vertical-align: top;
@@ -275,7 +290,7 @@ h1.name {
 ol {
 	position: relative;
 	display: block;
-	margin: 100px 0;
+	margin: 80px 0;
 	height: 2px;
 	background: #EEF0F7;
 
@@ -307,9 +322,10 @@ li {
 	position: relative;
 	display: inline-block;
 	float: left;
-	width: 25%;
+	width: 33%;
   	height: 50px;
 }
+
 li .line {
   position: absolute;
   top: -47px;
@@ -317,6 +333,11 @@ li .line {
   font-size: 20px;
   font-weight: 600;
   color: #04143A;
+}
+
+.timeline-label {
+	color: #48A4D2!important;
+	font-size: 16px!important;
 }
 li .point {
 	content: "";
@@ -330,6 +351,7 @@ li .point {
 	background: #4A90E2;
   position: absolute;
 }
+
 li .description {
   display: none;
   padding: 10px 0;
@@ -343,6 +365,7 @@ li .description {
   line-height: 25px;
   color: #5B6A9A;
 }
+
 .description::before {
   content: '';
   width: 0; 
@@ -362,6 +385,38 @@ li .description {
 	font-weight: 300;
 }
 
+.job-description {
+	color: #81899C;
+    line-height: 20px;
+    font-size: 16px;
+	margin-top: 10px;
+
+}
+
+.job-description li {
+	width: 90%;
+	height: auto;
+	margin-bottom: 10px;
+	list-style: circle!important;
+}
+
+.experiences-container {
+	height: 650px;
+}
+
+.trainings-container .timeline li, .certificates-container .timeline li{
+	position: relative;
+	display: inline-block;
+	width: 24%;
+  	height: 50px;
+}
+
+
+.trainings-container, .certificates-container {
+	height: 200px;
+}
+
+
 /* ---- Hover effects ---- */
 li:hover {
   color: #48A4D2;
@@ -376,13 +431,27 @@ li .description {
 
 /* Media queries*/
 
-/* @media(max-width: 1024px){
+@media(max-width: 1024px){
 	.container {
 		padding: 15px;
 		margin: 0px auto;
 	}
 	.cards {
 		margin-top: 250px;
+	}
+	.hero, .languages-container {
+		height: 400px;
+	}
+	.education { 
+		max-width: 1100px;
+		height: 300px;
+		margin: 0px auto 0px auto;
+	}
+	.experiences-container {
+		height: 800px;
+	}
+	.certificates-container, .trainings-container {
+		height: 320px;
 	}
 }
 
@@ -417,6 +486,10 @@ li .description {
 	.timeline li{
 		margin-top: 70px;
 		height: 150px;
+	}
+
+	.education { 
+		height: 400px;
 	}
 }
 
@@ -457,7 +530,12 @@ li .description {
 	footer {
 		margin-top: 2050px;
 	}
-	} */
+	.education { 
+		max-width: 1100px;
+		height: 400px;
+		margin: 0px auto 250px auto;
+	}
+}
 
 
 /* End of all :P*/
