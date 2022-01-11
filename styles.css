@@ -379,7 +379,7 @@ li .description {
 }
 
 
-.timeline .date{
+.timeline .location{
 	font-size: 14px;
 	color: #81899C;
 	font-weight: 300;
@@ -427,7 +427,9 @@ li .description {
 
 /*timeline ends*/
 
-
+.content-not-available {
+	display: none;
+}
 
 /* Media queries*/
 
@@ -448,10 +450,13 @@ li .description {
 		margin: 0px auto 0px auto;
 	}
 	.experiences-container {
-		height: 800px;
+		height: 900px;
 	}
 	.certificates-container, .trainings-container {
 		height: 320px;
+	}
+	.content-not-available {
+		display: none;
 	}
 }
 
@@ -478,18 +483,89 @@ li .description {
 		float: left;
 	}
 
+	h1.name {
+		font-size: 40px;
+	}
+
+	.card , .sections {
+		width: 100%;
+		height: auto;
+		margin: 10px 0;
+		float: left;
+	}
+
 	.timeline{
-		border: none;
-		background-color: rgba(0,0,0,0);
+		display: none;
+		}
+
+	.job-title {
+		position: absolute;
+		font-size: 15px;
+		top: -40px;
+		right: 20px;
+		padding: 10px
 	}
 
-	.timeline li{
-		margin-top: 70px;
-		height: 150px;
+	.lead {
+		margin-top: 15px;
+		font-size: 20px;
+		line-height: 28px;
 	}
-
+	.container {
+		margin: 0px;
+		padding: 0 15px;
+	}
+	footer {
+		margin-top: 2050px;
+	}
 	.education { 
+		max-width: 1100px;
 		height: 400px;
+		margin: 0px auto 250px auto;
+	}
+	.certificates-container, .experiences-container, .trainings-container {
+		display: none;
+	}
+	.content-not-available {
+		display: block;
+		color: #81899C;
+		line-height: 20px;
+		font-size: 16px;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.content-not-available li {
+    	width: 100%;
+	}
+	.content-not-available .section-title {
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 15px;
+		color: black;
+		text-align: left;
+	}
+	.content-not-available li {
+    	width: 100%;
+		height: auto;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.content-not-available li .description {
+		margin-top: 0px;
+	}
+	.content-not-available ol {
+		position: relative;
+		display: block;
+		height: auto;
+		margin: 0px;
+	}
+	.content-not-available .timeline-label {
+		font-size: 15px;
+	}
+	.location {
+		font-size: 16px;
+		color: #81899C;
+		font-weight: 300;
 	}
 }
 
@@ -534,6 +610,50 @@ li .description {
 		max-width: 1100px;
 		height: 400px;
 		margin: 0px auto 250px auto;
+	}
+	.certificates-container, .experiences-container, .trainings-container {
+		display: none;
+	}
+	.content-not-available {
+		display: block;
+		color: #81899C;
+		line-height: 20px;
+		font-size: 16px;
+		margin-top: 10px;
+		text-align: center;
+	}
+	.content-not-available li {
+    	width: 100%;
+	}
+	.content-not-available .section-title {
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 15px;
+		color: black;
+		text-align: left;
+	}
+	.content-not-available li {
+    	width: 100%;
+		height: auto;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.content-not-available li .description {
+		margin-top: 0px;
+	}
+	.content-not-available ol {
+		position: relative;
+		display: block;
+		height: auto;
+		margin: 0px;
+	}
+	.content-not-available .timeline-label {
+		font-size: 15px;
+	}
+	.location {
+		font-size: 16px;
+		color: #81899C;
+		font-weight: 300;
 	}
 }
 
