@@ -225,7 +225,7 @@ h1.name {
 	vertical-align: top;
 	border-radius: 10px;
 	text-align: center;
-	padding-top: 50px
+	padding-top: 20px
 }
 
 .card-active , .card:hover{
@@ -280,6 +280,10 @@ h1.name {
 	font-size: 16px;
 }
 
+.skill-meta p {
+	color: #5B6A9A;
+	font-size: 16px;
+}
 /* Achievements ends */
 
 
